@@ -1,62 +1,81 @@
+.main1 {
+	width: 100%;
+	padding-top: 10px;
+	display: block;
+	padding-bottom: 10px;
 
-
-.main1{
-    width: 100%;
-    padding-top: 10px;
-    display: block;
-    padding-bottom: 10px; 
-     
 }
 
-.textmain1{display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: oblique;
-    font-weight:500;
+.textmain1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: oblique;
+	font-weight: 500;
 }
 
 .main2 {
-    grid-area: main;
-    gap: 10px;
-    background-color: #f5cee3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1rem;
+	grid-area: main;
+	gap: 10px;
+	background-color: map-get($mapa-colores , rosa2);
+	@include flexbox(column, center, center);
+	font-size: 1rem;
 }
 
 .quees1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
+	@include flexbox(row, center, center);
+	padding: 10px;
 
 }
 
 .quees2 {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    border-top: white;
-    border-top-style: solid;
+	margin-top: 20px;
+	@include flexbox(row, center, center);
+	padding: 10px;
+	border-top: white;
+	border-top-style: solid;
 }
+
 .main3 {
-    background-color: #b9ecb9;
-    padding-bottom: 20px;
+	background-color: map-get($mapa-colores , verde3);
+	color: #069A8E;
+	
+
 }
 
 .main4 {
-	background-color: #bab1be;
+	background-color: map-get($mapa-colores , lila4);
 	padding: 10px;
 	padding-left: 50px;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	justify-items: center;
+
 }
+#galeria img{
+    width: 100%;
+    height: 250px;
+}
+#galeria .col-lg-4{
+    padding: 25px;
+    margin: 0 !important;
+}
+#galeria img:hover{
+    border:5px solid;
+    color: #069A8E;
+}
+
+.container {
+	display: inline;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	color: #60a8a1;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font: weight 50px;
+	font-size: 20px;
+
+}
+
 .card {
+	display: flex;
 	position: relative;
 	transition-property: background-color, color;
 	transition-duration: 1s;
@@ -74,6 +93,7 @@
 	text-decoration: none;
 	padding: 2px 4px;
 	border: solid 1px black;
+
 	&:hover {
 		transform: scale(1.2);
 		box-shadow: 5px 5px 10px 10px #d3b7d3;
@@ -92,15 +112,9 @@
 }
 
 .main5 {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #fde1c9;
-    flex-wrap:wrap;
-    position: relative;
-    display: block;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	margin-top: 10px;
+	background-color: map-get($mapa-colores , naranja5);
+	display: flex;
 
 }
-
-
